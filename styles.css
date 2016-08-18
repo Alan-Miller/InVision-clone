@@ -1,0 +1,293 @@
+/* write everything for mobile devices first, including stuff that */
+@import 'https://fonts.googleapis.com/css?family=Lato';
+
+body {
+  color: white;
+}
+
+.main-header {
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    /*background-color: #ccc;*/
+    padding: 25px;
+    opacity: 1;
+    display: flex;
+    /*justify-content: space-between;*/
+    /*margin: auto auto 5vh auto;*/
+}
+
+ul.header-list {
+  position: absolute;
+  right: 30px;
+  display: none;
+}
+
+ul.header-list li{
+  position: relative;
+  right: -10px;
+  display: inline-block;
+  margin-left: 26px;
+  padding-top: 6px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.invision-logo {
+  width: 200px;
+  height: auto;
+  display: inline-block;
+  /*margin-left: 0px;*/
+  position: absolute;
+  top: 10px;
+}
+
+.thin-red-outline {
+  border: thin solid #FF3366;
+  color: #FF3366;
+  padding: 10px 14px;
+}
+.thin-red-outline > a {
+  color: #FF3366;
+}
+
+.thin-outline {
+  border: thin solid white;
+  padding: 10px 14px;
+}
+
+.main-wrapper {
+  background-image: url("./mp-hero-05.jpg");
+  background-size: cover;
+  background-position: left 0px top 0;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.top-section {
+  width: 100vw;
+  height: 100vh;
+  padding-top: calc(50vh - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 25px;
+  /*transform: translate(0 -50%);*/
+}
+
+.marketplace-brand, .invision-brand {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0 auto;
+  border: 3px solid white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.invision-brand {
+  border: 0;
+  font-family: "Lato", sans-serif;
+}
+
+/*.shop-section {
+  position: relative
+}*/
+
+.shirt-container {
+  height: 45vh;
+  width: 90%;
+  margin: 0 auto 5px auto;
+  background-color: #ccc;
+  position: relative;
+}
+
+.shirt1-big-screen, .shirt2-big-screen {
+  background-image: url("./images/shirt1.jpg");
+  background-size: cover;
+  background-position: top -30px;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.shirt2-big-screen {
+  background-image: url("./images/shirt2.jpg");
+  float: right;
+}
+
+.shirt1, .shirt2, .shirt3, .shirt4, .shirt5, .shirt6 {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.shirt1 {
+  background-image: url("./images/shirt1.jpg");
+}
+.shirt2 {
+  background-image: url("./images/shirt2.jpg");
+}
+.shirt3 {
+  background-image: url("./images/shirt3.jpg");
+}
+.shirt4 {
+  background-image: url("./images/shirt4.jpg");
+}
+.shirt5 {
+  background-image: url("./images/shirt5.jpg");
+}
+.shirt6 {
+  background-image: url("./images/shirt6.jpg");
+}
+
+.big-footer {
+  width: 100%;
+  height: 600px;
+  background-color: #000000;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-div-one, .footer-div-two, .footer-div-three, .footer-div-four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-div-one {
+  margin-top: 40px;
+  flex-direction: column;
+}
+.footer-div-two {
+  flex-direction: column;
+}
+.footer-div-four {
+  font-size: .2em;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+.footer-div-four > p > span {
+  display: block;
+}
+
+.big-footer > div > div {
+  margin: 0 30px 10px 30px;
+}
+
+.font-size-bump {
+  font-size: 1.4em;
+}
+
+.pika-svg {
+  background-image: url("./images/pikachu.svg");
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
+
+.twitter, .facebook, .linkedin {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  border: thin solid gray;
+  border-radius: 50%;
+}
+.twitter {
+  background-image: url("./images/twitter.svg");
+}
+.facebook {
+  background-image: url("./images/facebook.svg");
+}
+.linkedin {
+  background-image: url("./images/linkedin.svg");
+}
+
+/*.bulb-svg {
+  background-image: url("./images/light-bulb.svg");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+}*/
+
+.small-footer {
+  width: 100%;
+  height: 70px;
+  background-color: #1A1A1A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul.footer-list li {
+  font-family: 'Lato', sans-serif;
+  position: relative;
+  text-transform: uppercase;
+  right: -10px;
+  display: inline-block;
+  margin-left: 26px;
+  padding-top: 6px;
+  /*display: none;*/
+}
+
+.two-shirts {
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  display: none
+}
+
+.shirt1, .shirt2 {
+  display: block;
+}
+
+.big-screen {
+  display: none;
+}
+
+/* anything after the @media will apply to the media you check for */
+@media(min-width: 750px) {
+  ul.header-list {
+    display: inline-block;
+  }
+  .marketplace-brand {
+    font-size: 100px;
+  }
+  .invision-brand {
+    font-size: 25px;
+  }
+  ul.footer-list li {
+    font-size: 15px;
+    display: inline-block;
+  }
+  .two-shirts {
+    display: block;
+  }
+  .shirt1, .shirt2 {
+    display: none;
+  }
+  .big-screen {
+    display: inline;
+  }
+  .shirt1, .shirt2, .shirt3, .shirt4, .shirt5, .shirt6 {
+    background-size: 100% auto;
+    background-position: center -10px;
+    background-repeat: no-repeat;
+  }
+  .footer-div-one, .footer-div-four {
+    flex-direction: row;
+  }
+  .footer-div-four > p > span {
+    display: inline;
+  }
+}
